@@ -1,0 +1,8 @@
+const body=document.body,header=document.querySelector('.header'),toggle=document.getElementById('menuToggle'),navLinks=document.querySelectorAll('.nav a[href^="#"]');
+toggle.addEventListener('click',()=>{const open=body.classList.toggle('menu-open');toggle.setAttribute('aria-expanded',String(open));});
+navLinks.forEach(a=>a.addEventListener('click',()=>{body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');}));
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>20);let current='inicio';document.querySelectorAll('main section[id]').forEach(s=>{if(scrollY>=s.offsetTop-130)current=s.id});navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${current}`));});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const track=document.getElementById('galleryTrack');document.getElementById('prev').onclick=()=>track.scrollBy({left:-track.clientWidth*.75,behavior:'smooth'});document.getElementById('next').onclick=()=>track.scrollBy({left:track.clientWidth*.75,behavior:'smooth'});
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget,d=new FormData(f),m=document.getElementById('formMessage');m.textContent=`¡Gracias, ${d.get('name')}! Recibimos tu solicitud para ${d.get('event').toLowerCase()}.`;f.reset();setTimeout(()=>m.textContent='',7000);});

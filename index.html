@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elka Creaciones: globos, piñatas, dulces, plástico y decoración para fiestas.">
+  <title>Elka Creaciones | Todo para tu celebración</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="logo" href="#inicio" aria-label="Elka Creaciones">
+        <span class="logo-icon">🎈</span>
+        <span class="logo-copy"><strong>Elka</strong><small>creaciones</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="active">Inicio</a><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#nosotros">Nosotros</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a>
+        <a class="btn btn-pink" href="#contacto">💬 Cotizar ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Decoración y artículos para fiestas</span>
+          <h1>Hacemos de cada celebración un <span>momento inolvidable</span></h1>
+          <p>Decoraciones personalizadas para cumpleaños, eventos y celebraciones especiales.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Cotizar ahora →</a><a class="btn btn-outline" href="#galeria">▶ Ver galería</a></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Escena decorativa de cumpleaños">
+          <div class="balloon b1"></div><div class="balloon b2"></div><div class="balloon b3"></div><div class="balloon b4"></div>
+          <div class="scene"><div class="neon">¡Feliz<br>Cumple!</div><div class="cake"><div class="candles">||||</div><div class="cake-top"></div><div class="cake-body"></div><div class="cake-base"></div></div><div class="cupcakes">🧁 🧁 🧁</div><div class="pinata">🪅</div></div>
+        </div>
+      </div>
+      <div class="wave"></div>
+    </section>
+
+    <section class="welcome reveal">
+      <div class="container welcome-card">
+        <p><strong>Bienvenidos a Elka Creaciones</strong>, tu aliado perfecto para llenar de color y alegría cada celebración. Nos especializamos en la venta de artículos para fiestas de la mejor calidad:</p>
+        <div class="products"><span>🎈 Globos</span><span>🪅 Piñatas</span><span>🍬 Dulces</span><span>🍽️ Plástico</span><span>🎉 Entre otras cosas</span></div>
+      </div>
+    </section>
+
+    <section class="benefits section-sm">
+      <div class="container benefit-grid">
+        <article class="benefit reveal"><div class="icon pink">♥</div><h3>Diseños personalizados</h3><p>Creamos decoraciones únicas según tu estilo.</p></article>
+        <article class="benefit reveal"><div class="icon cyan">🎈</div><h3>Materiales de calidad</h3><p>Usamos productos seguros y de gran calidad.</p></article>
+        <article class="benefit reveal"><div class="icon yellow">★</div><h3>Hecho con amor</h3><p>Cada detalle está creado con dedicación.</p></article>
+        <article class="benefit reveal"><div class="icon orange">🚚</div><h3>Puntuales en tu evento</h3><p>Montaje coordinado y atención responsable.</p></article>
+        <article class="benefit reveal"><div class="icon pink">🎉</div><h3>Momentos inolvidables</h3><p>Experiencias que recordarás para siempre.</p></article>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="container services-layout">
+        <div class="services-intro reveal"><span class="eyebrow">Nuestros servicios</span><h2>Todo lo que necesitas para tu celebración <span>♥</span></h2><p>Soluciones completas de decoración y artículos para todo tipo de eventos.</p><a class="btn btn-pink" href="#contacto">Ver todos los servicios →</a><div class="big-pinata">🪅</div></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div><span>🎂</span><h3>Cumpleaños</h3><p>Decoraciones temáticas para niños, jóvenes y adultos.</p></div><div class="visual pink-bg">🎈🎂🎈</div></article>
+          <article class="service-card reveal"><div><span>👥</span><h3>Eventos sociales</h3><p>Bodas, XV años, bautizos, baby showers y más.</p></div><div class="visual cream-bg">💐✨💐</div></article>
+          <article class="service-card reveal"><div><span>💼</span><h3>Eventos corporativos</h3><p>Decoración para lanzamientos y activaciones.</p></div><div class="visual blue-bg">🔵🟠🔵</div></article>
+          <article class="service-card reveal"><div><span>★</span><h3>Decoración personalizada</h3><p>Piezas únicas y detalles para tu evento.</p></div><div class="visual party-bg">🎁🎉🎁</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="container gallery-panel">
+        <div class="gallery-head"><div><span class="eyebrow light">Inspiración que encanta</span><h2>Nuestro trabajo, tu próxima celebración <span>♥</span></h2></div><div><button id="prev">←</button><button id="next">→</button></div></div>
+        <div class="gallery-track" id="galleryTrack">
+          <article class="gallery-card g1"><span>🎈</span><h3>Cumpleaños pastel</h3></article><article class="gallery-card g2"><span>🪅</span><h3>Piñatas temáticas</h3></article><article class="gallery-card g3"><span>🎊</span><h3>Arco corporativo</h3></article><article class="gallery-card g4"><span>🍭</span><h3>Mesa de dulces</h3></article><article class="gallery-card g5"><span>🎂</span><h3>Fiesta infantil</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="container about-grid"><div class="about-visual reveal">🎉</div><div class="reveal"><span class="eyebrow">Conoce a Elka</span><h2>Celebramos contigo cada momento especial</h2><p>Combinamos creatividad, calidad y atención cercana para convertir cualquier idea en una celebración llena de color.</p><div class="stats"><div><strong>+250</strong><span>eventos</span></div><div><strong>+500</strong><span>clientes felices</span></div><div><strong>100%</strong><span>personalizado</span></div></div></div></div>
+    </section>
+
+    <section class="section process" id="proceso"><div class="container"><div class="section-heading reveal"><span class="eyebrow">Así trabajamos</span><h2>Un proceso fácil y personalizado <span>♥</span></h2></div><div class="steps">
+      <article class="step reveal"><b>1</b><div>💬</div><h3>Cuéntanos tu idea</h3><p>Platícanos sobre tu evento y temática.</p></article><article class="step reveal"><b>2</b><div>🖌️</div><h3>Diseñamos tu propuesta</h3><p>Creamos una propuesta a tu medida.</p></article><article class="step reveal"><b>3</b><div>✅</div><h3>Aprobamos juntos</h3><p>Ajustamos hasta que todo quede perfecto.</p></article><article class="step reveal"><b>4</b><div>🚚</div><h3>Montamos el evento</h3><p>Instalamos cada elemento puntualmente.</p></article><article class="step reveal"><b>5</b><div>♥</div><h3>Disfruta tu momento</h3><p>Tú celebras, nosotros cuidamos los detalles.</p></article>
+    </div></div></section>
+
+    <section class="section contact" id="contacto"><div class="container contact-grid"><article class="testimonial reveal"><span class="eyebrow">Lo que dicen nuestros clientes</span><div class="quote">“</div><blockquote>Elka Creaciones hizo de mi evento algo espectacular. Cada detalle superó mis expectativas. 100% recomendados.</blockquote><div class="client"><span>ML</span><div><strong>Mariana López</strong><small>Cumpleaños de 30 años</small></div></div></article>
+      <div class="form-card reveal"><span class="eyebrow">Cotiza tu evento</span><h2>¡Hagamos realidad tu celebración!</h2><p>Completa el formulario y te contactaremos a la brevedad.</p><form id="contactForm"><div class="form-row"><label>Nombre completo<input name="name" required placeholder="Tu nombre"></label><label>Teléfono / WhatsApp<input name="phone" required placeholder="443 000 0000"></label></div><div class="form-row"><label>Correo electrónico<input type="email" name="email" required placeholder="correo@ejemplo.com"></label><label>Tipo de evento<select name="event" required><option value="">Selecciona</option><option>Cumpleaños</option><option>Baby shower</option><option>Boda</option><option>XV años</option><option>Corporativo</option><option>Otro</option></select></label></div><label>Cuéntanos sobre tu evento<textarea name="message" rows="5" required placeholder="Fecha, temática, colores y número de invitados..."></textarea></label><button class="btn btn-pink block" type="submit">Enviar solicitud ✈</button><p class="form-message" id="formMessage"></p></form></div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="logo logo-footer" href="#inicio"><span class="logo-icon">🎈</span><span class="logo-copy"><strong>Elka</strong><small>creaciones</small></span></a><p>Decoramos momentos, creamos recuerdos.</p></div><div><h3>Navegación</h3><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#nosotros">Nosotros</a></div><div><h3>Servicios</h3><a href="#servicios">Cumpleaños</a><a href="#servicios">Eventos sociales</a><a href="#servicios">Corporativos</a><a href="#servicios">Personalizados</a></div><div><h3>Contáctanos</h3><a href="tel:+524431234567">☎ 443 123 4567</a><a href="mailto:hola@elkacreaciones.com">✉ hola@elkacreaciones.com</a><span>⌖ Morelia, Michoacán</span></div></div><div class="container copyright">© <span id="year"></span> Elka Creaciones.</div></footer>
+  <a class="whatsapp" href="https://wa.me/524431234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
